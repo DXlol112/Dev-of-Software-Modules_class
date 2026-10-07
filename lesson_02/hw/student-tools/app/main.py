@@ -1,14 +1,16 @@
 from rich.console import Console
 
-from app.services.calculator import calculate_average
+from app.services.calculator import calculate_average, calculate_min, calculate_max
 from app.utils.formatter import format_average
 
 
 def main():
     values = [5, 4, 5, 3, 5]
     average = calculate_average(values)
+    minimum = calculate_min(values)
+    maximum = calculate_max(values)
     console = Console()
-    console.print(f"[bold green]{format_average(average)}[/bold green]")
+    console.print(f"[bold green]{format_average(average, minimum, maximum)}[/bold green]")
 
 
 if __name__ == "__main__":
