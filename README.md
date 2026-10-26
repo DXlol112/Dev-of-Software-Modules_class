@@ -6,12 +6,12 @@
 
 ## Оглавление
 
-| Номер | Занятие | Домашняя работа | Мини-проекты |
-| :---: | --- | --- | --- |
-| 1 | [Введение](lesson_01/class/introduction.md) | [Задание № 1](lesson_01/hw/hw-01.md) | — |
-| 2 | [Структура Python-проекта](lesson_02/class/python-project-structure.md) | [Задание № 2](lesson_02/hw/hw-02.md) | [Student Tools](lesson_02/class/student-tools-practice/README.md) |
-| 3 | — | [Практикум «Структура проекта»](lesson_03/hw/hw-03.md) | [Cafe Report](lesson_03/hw/cafe-report/README.md), [Text Kit](lesson_03/hw/text-kit/README.md) |
-| 4 | [Отчёт кафе — стартовый проект](lesson_04/class/cafe-report-starter/README.md) | [Практикум «Младший разработчик: первая неделя»](lesson_04/hw/hw-04.md) | [Cafe Report Starter](lesson_04/class/cafe-report-starter/README.md) |
+| Номер | Занятие                                                                        | Домашняя работа                                                         |
+| :---: | :----------------------------------------------------------------------------- | :---------------------------------------------------------------------- |
+|   1   | [Введение](lesson_01/class/introduction.md)                                    | [Задание № 1](lesson_01/hw/hw-01.md)                                    |
+|   2   | [Структура Python-проекта](lesson_02/class/python-project-structure.md)        | [Задание № 2](lesson_02/hw/hw-02.md)                                    |
+|   3   | —                                                                              | [Практикум «Структура проекта»](lesson_03/hw/hw-03.md)                  |
+|   4   | [Отчёт кафе — стартовый проект](lesson_04/class/cafe-report-starter/README.md) | [Практикум «Младший разработчик: первая неделя»](lesson_04/hw/hw-04.md) |
 
 ## Структура
 
@@ -33,7 +33,9 @@
 │       │   ├── 29-activate-toggle.png
 │       │   └── 32-pytest-ok.png
 │       ├── lesson_03/
+│       │   └── .gitkeep
 │       └── lesson_04/
+│           └── .gitkeep
 ├── lesson_01/
 │   ├── class/
 │   │   └── introduction.md
@@ -56,11 +58,18 @@
 │   │   │   ├── .gitignore
 │   │   │   ├── README.md
 │   │   │   └── requirements.txt
+│   │   ├── .gitkeep
 │   │   └── python-project-structure.md
 │   └── hw/
+│       ├── trip/
+│       │   ├── calculator.py
+│       │   ├── README.md
+│       │   ├── requirements.txt
+│       │   └── trip.py
 │       └── hw-02.md
 ├── lesson_03/
 │   ├── class/
+│   │   └── .gitkeep
 │   └── hw/
 │       ├── cafe-report/
 │       │   ├── app/
@@ -107,39 +116,40 @@
 │       └── hw-03.md
 ├── lesson_04/
 │   ├── class/
-│   │   └── cafe-report-starter/
-│   │       ├── app/
-│   │       │   ├── domain/
-│   │       │   │   ├── __init__.py
-│   │       │   │   ├── order.py
-│   │       │   │   └── shift.py
-│   │       │   ├── services/
-│   │       │   │   ├── __init__.py
-│   │       │   │   ├── calculator.py
-│   │       │   │   ├── importer.py
-│   │       │   │   ├── orders.py
-│   │       │   │   └── report_file.py
-│   │       │   ├── ui/
-│   │       │   │   ├── __init__.py
-│   │       │   │   └── console.py
-│   │       │   ├── utils/
-│   │       │   │   ├── __init__.py
-│   │       │   │   ├── clock.py
-│   │       │   │   ├── formatter.py
-│   │       │   │   └── text.py
-│   │       │   └── __init__.py
-│   │       ├── data/
-│   │       │   └── shift.csv
-│   │       ├── tests/
-│   │       │   ├── test_calculator.py
-│   │       │   ├── test_formatter.py
-│   │       │   └── test_orders.py
-│   │       ├── .gitignore
-│   │       ├── main.py
-│   │       ├── pyproject.toml
-│   │       ├── README.md
-│   │       ├── requirements.txt
-│   │       └── type_examples.py
+│   │   ├── cafe-report-starter/
+│   │   │   ├── app/
+│   │   │   │   ├── domain/
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── order.py
+│   │   │   │   │   └── shift.py
+│   │   │   │   ├── services/
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── calculator.py
+│   │   │   │   │   ├── importer.py
+│   │   │   │   │   ├── orders.py
+│   │   │   │   │   └── report_file.py
+│   │   │   │   ├── ui/
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   └── console.py
+│   │   │   │   ├── utils/
+│   │   │   │   │   ├── __init__.py
+│   │   │   │   │   ├── clock.py
+│   │   │   │   │   ├── formatter.py
+│   │   │   │   │   └── text.py
+│   │   │   │   └── __init__.py
+│   │   │   ├── data/
+│   │   │   │   └── shift.csv
+│   │   │   ├── tests/
+│   │   │   │   ├── test_calculator.py
+│   │   │   │   ├── test_formatter.py
+│   │   │   │   └── test_orders.py
+│   │   │   ├── .gitignore
+│   │   │   ├── main.py
+│   │   │   ├── pyproject.toml
+│   │   │   ├── README.md
+│   │   │   ├── requirements.txt
+│   │   │   └── type_examples.py
+│   │   └── .gitkeep
 │   └── hw/
 │       └── hw-04.md
 ├── .gitignore
