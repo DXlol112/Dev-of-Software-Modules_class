@@ -2,16 +2,16 @@
 
 ## О чём этот репозиторий
 
-Он служит заменой тетради: здесь будут публиковаться записи лекций, домашние работы и другие материалы по предмету **«Разработка программных модулей»**.
+Он служит заменой тетради: здесь публикуются записи лекций, домашние работы и другие материалы по предмету **«Разработка программных модулей»**.
 
 ## Оглавление
 
-| Номер |                                  Занятие                                  |                                  Домашняя работа                                  |
-| :---: | :-----------------------------------------------------------------------: | :-------------------------------------------------------------------------------: |
-|   1   |                 [Введение](lesson_01/class/1.Введение.md)                 |                     [Задание № 1](lesson_01/homework/hw_1.md)                     |
-|   2   | [Структура Python-проекта](lesson_02/class/2.Структура_Python-проекта.md) |                       [Задание № 2](lesson_02/hw/hw_02.md)                        |
-|   3   |                                     —                                     |              [Практикум «Структура проекта»](lesson_03/hw/hw-03.md)               |
-|   4   |                                     —                                     | [Практикум «Младший разработчик: первая неделя»](lesson_04/hw/podpisi-practic.md) |
+| Номер | Занятие | Домашняя работа | Мини-проекты |
+| :---: | --- | --- | --- |
+| 1 | [Введение](lesson_01/class/introduction.md) | [Задание № 1](lesson_01/hw/hw-01.md) | — |
+| 2 | [Структура Python-проекта](lesson_02/class/python-project-structure.md) | [Задание № 2](lesson_02/hw/hw-02.md) | [Student Tools](lesson_02/class/student-tools-practice/README.md) |
+| 3 | — | [Практикум «Структура проекта»](lesson_03/hw/hw-03.md) | [Cafe Report](lesson_03/hw/cafe-report/README.md), [Text Kit](lesson_03/hw/text-kit/README.md) |
+| 4 | [Отчёт кафе — стартовый проект](lesson_04/class/cafe-report-starter/README.md) | [Практикум «Младший разработчик: первая неделя»](lesson_04/hw/hw-04.md) | [Cafe Report Starter](lesson_04/class/cafe-report-starter/README.md) |
 
 ## Структура
 
@@ -19,9 +19,9 @@
 ├── .github/
 │   └── assets/
 │       ├── lesson_01/
-│       │   ├── Pasted image 20260902173817.png
-│       │   ├── Pasted image 20260902180750.png
-│       │   └── Pasted image 20260902180920.png
+│       │   ├── grading.png
+│       │   ├── internet-addresses.png
+│       │   └── sprints.png
 │       ├── lesson_02/
 │       │   ├── 02-rich.png
 │       │   ├── 05-venv-inside.png
@@ -36,16 +36,12 @@
 │       └── lesson_04/
 ├── lesson_01/
 │   ├── class/
-│   │   └── 1.Введение.md
-│   └── homework/
-│       └── hw_1.md
+│   │   └── introduction.md
+│   └── hw/
+│       └── hw-01.md
 ├── lesson_02/
 │   ├── class/
 │   │   ├── student-tools-practice/
-│   │   │   └── tests/
-│   │   └── 2.Структура_Python-проекта.md
-│   ├── hw/
-│   │   ├── student-tools/
 │   │   │   ├── app/
 │   │   │   │   ├── services/
 │   │   │   │   │   ├── __init__.py
@@ -60,26 +56,13 @@
 │   │   │   ├── .gitignore
 │   │   │   ├── README.md
 │   │   │   └── requirements.txt
-│   │   └── hw_02.md
-│   └── student-tools-practice/
-│       ├── app/
-│       │   ├── services/
-│       │   │   ├── __init__.py
-│       │   │   └── calculator.py
-│       │   ├── utils/
-│       │   │   ├── __init__.py
-│       │   │   └── formatter.py
-│       │   ├── __init__.py
-│       │   └── main.py
-│       ├── tests/
-│       │   └── test_calculator.py
-│       ├── .gitignore
-│       ├── README.md
-│       └── requirements.txt
+│   │   └── python-project-structure.md
+│   └── hw/
+│       └── hw-02.md
 ├── lesson_03/
 │   ├── class/
 │   └── hw/
-│       ├── praktikum-1-cafe-report/
+│       ├── cafe-report/
 │       │   ├── app/
 │       │   │   ├── services/
 │       │   │   │   ├── __init__.py
@@ -94,7 +77,7 @@
 │       │   ├── data/
 │       │   │   └── orders.csv
 │       │   ├── docs/
-│       │   │   └── adout.md
+│       │   │   └── about.md
 │       │   ├── tests/
 │       │   │   ├── __init__.py
 │       │   │   ├── test_orders.py
@@ -102,7 +85,7 @@
 │       │   ├── .gitignore
 │       │   ├── README.md
 │       │   └── requirements.txt
-│       ├── praktikum-2-text-kit/
+│       ├── text-kit/
 │       │   ├── app/
 │       │   │   ├── services/
 │       │   │   │   ├── __init__.py
@@ -114,17 +97,51 @@
 │       │   │   │   └── text.py
 │       │   │   ├── __init__.py
 │       │   │   └── main.py
-│       │   └── tests/
-│       │       ├── __init__.py
-│       │       ├── test_dates.py
-│       │       ├── test_statistics.py
-│       │       ├── test_text.py
-│       │       └── test_validation.py
+│       │   ├── tests/
+│       │   │   ├── __init__.py
+│       │   │   ├── test_dates.py
+│       │   │   ├── test_statistics.py
+│       │   │   ├── test_text.py
+│       │   │   └── test_validation.py
+│       │   └── README.md
 │       └── hw-03.md
 ├── lesson_04/
 │   ├── class/
+│   │   └── cafe-report-starter/
+│   │       ├── app/
+│   │       │   ├── domain/
+│   │       │   │   ├── __init__.py
+│   │       │   │   ├── order.py
+│   │       │   │   └── shift.py
+│   │       │   ├── services/
+│   │       │   │   ├── __init__.py
+│   │       │   │   ├── calculator.py
+│   │       │   │   ├── importer.py
+│   │       │   │   ├── orders.py
+│   │       │   │   └── report_file.py
+│   │       │   ├── ui/
+│   │       │   │   ├── __init__.py
+│   │       │   │   └── console.py
+│   │       │   ├── utils/
+│   │       │   │   ├── __init__.py
+│   │       │   │   ├── clock.py
+│   │       │   │   ├── formatter.py
+│   │       │   │   └── text.py
+│   │       │   └── __init__.py
+│   │       ├── data/
+│   │       │   └── shift.csv
+│   │       ├── tests/
+│   │       │   ├── test_calculator.py
+│   │       │   ├── test_formatter.py
+│   │       │   └── test_orders.py
+│   │       ├── .gitignore
+│   │       ├── main.py
+│   │       ├── pyproject.toml
+│   │       ├── README.md
+│   │       ├── requirements.txt
+│   │       └── type_examples.py
 │   └── hw/
-│       └── podpisi-practic.md
+│       └── hw-04.md
 ├── .gitignore
 ├── LICENSE
 └── README.md

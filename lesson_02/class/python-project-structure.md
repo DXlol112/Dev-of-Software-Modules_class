@@ -102,5 +102,3 @@ Rich меняет оформление вывода, а формула расч�
 - `collected 0 items` — тесты не найдены; это не подтверждает исправность программы.
 
 Скриншоты взяты из урока и показывают macOS; пути на другом компьютере отличаются.
-
-Источник: [«Структура Python-проекта», главы 2.1–2.7](https://algorthimization-course-vvodnoe.vercel.app/mdk0101-razrabotka-modulei/lessons/02-struktura-python-proekta/01-venv.html).

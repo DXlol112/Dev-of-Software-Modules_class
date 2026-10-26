@@ -1,11 +1,9 @@
-"""Набор функций для учебного проекта Text Kit.
+"""Точка запуска Text Kit: примеры строк, расчётов, проверок и дат."""
 
-Всё лежит в одном файле: строки, числа, проверка данных и даты вперемешку.
-Программа работает, но читать и дополнять такой файл тяжело.
-"""
-
-from app.services import *
-from app.utils import *
+from app.services.statistics import average, count_values, median, spread
+from app.services.validation import is_email, is_phone, normalize_phone, password_problems
+from app.utils.dates import days_between, format_date, is_weekend, parse_date
+from app.utils.text import clean_spaces, initials, shorten, slug
 
 
 TITLE = "  Отчёт   за март  "
