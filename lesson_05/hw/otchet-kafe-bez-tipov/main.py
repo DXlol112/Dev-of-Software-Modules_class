@@ -5,8 +5,6 @@ from app.ui.console import print_report
 from app.utils.clock import today_label
 from app.utils.formatter import format_kopeks, format_title
 
-DATA_FILE = Path(__file__).resolve().parent / "data" / "shift.csv"
-
 
 def build_report(path: Path) -> list[str]:
     orders = load_orders(path)
@@ -19,4 +17,4 @@ def build_report(path: Path) -> list[str]:
 
 
 if __name__ == "__main__":
-    print_report(build_report(DATA_FILE))
+    print_report(build_report(Path("data/smena.csv")))
