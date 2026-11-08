@@ -6,7 +6,7 @@ API — интерфейс для взаимодействия приложен�
 
 ### Адреса в Интернете
 
-![Схема интернет-адресов](../../.github/assets/lesson_01/internet-addresses.png)
+![Схема интернет-адресов](../../assets/lesson_01/internet-addresses.png)
 
 ### JSON
 
@@ -39,11 +39,11 @@ JSON — это текстовый формат с парами «имя: зна
 
 ### Спринты
 
-![Схема спринтов](../../.github/assets/lesson_01/sprints.png)
+![Схема спринтов](../../assets/lesson_01/sprints.png)
 
 ### Оценивание
 
-![Система оценивания](../../.github/assets/lesson_01/grading.png)
+![Система оценивания](../../assets/lesson_01/grading.png)
 
 ## Контракт и почему его нельзя менять
 

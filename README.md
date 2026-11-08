@@ -11,31 +11,41 @@
 |   1   | [Введение](lesson_01/class/introduction.md)                                    | [Задание № 1](lesson_01/hw/hw-01.md)                                    |
 |   2   | [Структура Python-проекта](lesson_02/class/python-project-structure.md)        | [Задание № 2](lesson_02/hw/hw-02.md)                                    |
 |   3   | —                                                                              | [Практикум «Структура проекта»](lesson_03/hw/hw-03.md)                  |
-|   4   | [Отчёт кафе — стартовый проект](lesson_04/class/cafe-report-starter/README.md) | [Практикум «Младший разработчик: первая неделя»](lesson_04/hw/hw-04.md) |
+|   4   | — | [Практикум «Младший разработчик: первая неделя»](lesson_04/hw/hw-04.md) |
+|   5   | — | [Отчёт по проверке типов](lesson_05/hw/otchet_python.md) |
 
 ## Структура
 
 ```text
 ├── .github/
-│   └── assets/
-│       ├── lesson_01/
-│       │   ├── grading.png
-│       │   ├── internet-addresses.png
-│       │   └── sprints.png
-│       ├── lesson_02/
-│       │   ├── 02-rich.png
-│       │   ├── 05-venv-inside.png
-│       │   ├── 11-freeze.png
-│       │   ├── 14-vscode-interpreter.png
-│       │   ├── 16-name-demo.png
-│       │   ├── 25-tree.png
-│       │   ├── 26-two-runs.png
-│       │   ├── 29-activate-toggle.png
-│       │   └── 32-pytest-ok.png
-│       ├── lesson_03/
-│       │   └── .gitkeep
-│       └── lesson_04/
-│           └── .gitkeep
+│   └── .gitkeep
+├── assets/
+│   ├── lesson_01/
+│   │   ├── grading.png
+│   │   ├── internet-addresses.png
+│   │   └── sprints.png
+│   ├── lesson_02/
+│   │   ├── 02-rich.png
+│   │   ├── 05-venv-inside.png
+│   │   ├── 11-freeze.png
+│   │   ├── 14-vscode-interpreter.png
+│   │   ├── 16-name-demo.png
+│   │   ├── 25-tree.png
+│   │   ├── 26-two-runs.png
+│   │   ├── 29-activate-toggle.png
+│   │   └── 32-pytest-ok.png
+│   ├── lesson_03/
+│   │   └── .gitkeep
+│   ├── lesson_04/
+│   │   └── .gitkeep
+│   └── lesson_05/
+│       ├── py-01-extensions.png
+│       ├── py-02-settings.png
+│       ├── py-03-squiggle.png
+│       ├── py-04-hover.png
+│       ├── py-05-problems.png
+│       ├── py-06-mypy-errors.png
+│       └── py-07-final.png
 ├── lesson_01/
 │   ├── class/
 │   │   └── introduction.md
@@ -62,8 +72,8 @@
 │   │   └── python-project-structure.md
 │   └── hw/
 │       ├── trip/
-│       │   ├── calculator.py
 │       │   ├── README.md
+│       │   ├── calculator.py
 │       │   ├── requirements.txt
 │       │   └── trip.py
 │       └── hw-02.md
@@ -116,42 +126,45 @@
 │       └── hw-03.md
 ├── lesson_04/
 │   ├── class/
-│   │   ├── cafe-report-starter/
-│   │   │   ├── app/
-│   │   │   │   ├── domain/
-│   │   │   │   │   ├── __init__.py
-│   │   │   │   │   ├── order.py
-│   │   │   │   │   └── shift.py
-│   │   │   │   ├── services/
-│   │   │   │   │   ├── __init__.py
-│   │   │   │   │   ├── calculator.py
-│   │   │   │   │   ├── importer.py
-│   │   │   │   │   ├── orders.py
-│   │   │   │   │   └── report_file.py
-│   │   │   │   ├── ui/
-│   │   │   │   │   ├── __init__.py
-│   │   │   │   │   └── console.py
-│   │   │   │   ├── utils/
-│   │   │   │   │   ├── __init__.py
-│   │   │   │   │   ├── clock.py
-│   │   │   │   │   ├── formatter.py
-│   │   │   │   │   └── text.py
-│   │   │   │   └── __init__.py
-│   │   │   ├── data/
-│   │   │   │   └── shift.csv
-│   │   │   ├── tests/
-│   │   │   │   ├── test_calculator.py
-│   │   │   │   ├── test_formatter.py
-│   │   │   │   └── test_orders.py
-│   │   │   ├── .gitignore
-│   │   │   ├── main.py
-│   │   │   ├── pyproject.toml
-│   │   │   ├── README.md
-│   │   │   ├── requirements.txt
-│   │   │   └── type_examples.py
 │   │   └── .gitkeep
 │   └── hw/
 │       └── hw-04.md
+├── lesson_05/
+│   └── hw/
+│       ├── otchet-kafe-bez-tipov/
+│       │   ├── app/
+│       │   │   ├── domain/
+│       │   │   │   ├── __init__.py
+│       │   │   │   ├── order.py
+│       │   │   │   └── shift.py
+│       │   │   ├── services/
+│       │   │   │   ├── __init__.py
+│       │   │   │   ├── calculator.py
+│       │   │   │   ├── importer.py
+│       │   │   │   ├── orders.py
+│       │   │   │   └── report_file.py
+│       │   │   ├── ui/
+│       │   │   │   ├── __init__.py
+│       │   │   │   └── console.py
+│       │   │   ├── utils/
+│       │   │   │   ├── __init__.py
+│       │   │   │   ├── clock.py
+│       │   │   │   ├── formatter.py
+│       │   │   │   └── text.py
+│       │   │   └── __init__.py
+│       │   ├── data/
+│       │   │   └── smena.csv
+│       │   ├── tests/
+│       │   │   ├── test_calculator.py
+│       │   │   ├── test_formatter.py
+│       │   │   └── test_orders.py
+│       │   ├── .gitignore
+│       │   ├── README.md
+│       │   ├── main.py
+│       │   ├── proba.py
+│       │   ├── pyproject.toml
+│       │   └── requirements.txt
+│       └── otchet_python.md
 ├── .gitignore
 ├── LICENSE
 └── README.md
