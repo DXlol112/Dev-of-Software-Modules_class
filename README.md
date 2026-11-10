@@ -13,6 +13,7 @@
 |   3   | —                                                                              | [Практикум «Структура проекта»](lesson_03/hw/hw-03.md)                  |
 |   4   | — | [Практикум «Младший разработчик: первая неделя»](lesson_04/hw/hw-04.md) |
 |   5   | — | [Отчёт по проверке типов](lesson_05/hw/otchet_python.md) |
+|   6   | — | [Отчёт по проверке типов: Pylance и mypy](lesson_06/hw/otchet_06.md) |
 
 ## Структура
 
@@ -38,14 +39,25 @@
 │   │   └── .gitkeep
 │   ├── lesson_04/
 │   │   └── .gitkeep
-│   └── lesson_05/
-│       ├── py-01-extensions.png
-│       ├── py-02-settings.png
-│       ├── py-03-squiggle.png
-│       ├── py-04-hover.png
-│       ├── py-05-problems.png
-│       ├── py-06-mypy-errors.png
-│       └── py-07-final.png
+│   ├── lesson_05/
+│   │   ├── py-01-extensions.png
+│   │   ├── py-02-settings.png
+│   │   ├── py-03-squiggle.png
+│   │   ├── py-04-hover.png
+│   │   ├── py-05-problems.png
+│   │   ├── py-06-mypy-errors.png
+│   │   └── py-07-final.png
+│   └── lesson_06/
+│       ├── 06-01-off.png
+│       ├── 06-02-settings.png
+│       ├── 06-03-squiggle.png
+│       ├── 06-04-hover.png
+│       ├── 06-05-problems.png
+│       ├── 06-06-strict.png
+│       ├── 06-07-mypy-errors.png
+│       ├── 06-08-mypy-success.png
+│       ├── 06-09-bez-tipov.png
+│       └── 06-10-tip.png
 ├── lesson_01/
 │   ├── class/
 │   │   └── introduction.md
@@ -68,12 +80,11 @@
 │   │   │   ├── .gitignore
 │   │   │   ├── README.md
 │   │   │   └── requirements.txt
-│   │   ├── .gitkeep
 │   │   └── python-project-structure.md
 │   └── hw/
 │       ├── trip/
-│       │   ├── README.md
 │       │   ├── calculator.py
+│       │   ├── README.md
 │       │   ├── requirements.txt
 │       │   └── trip.py
 │       └── hw-02.md
@@ -131,7 +142,12 @@
 │       └── hw-04.md
 ├── lesson_05/
 │   └── hw/
-│       ├── otchet-kafe-bez-tipov/
+│       └── otchet_python.md
+├── lesson_06/
+│   └── hw/
+│       ├── otchet-kafe-start/
+│       │   ├── .vscode/
+│       │   │   └── settings.json
 │       │   ├── app/
 │       │   │   ├── domain/
 │       │   │   │   ├── __init__.py
@@ -159,12 +175,12 @@
 │       │   │   ├── test_formatter.py
 │       │   │   └── test_orders.py
 │       │   ├── .gitignore
-│       │   ├── README.md
 │       │   ├── main.py
-│       │   ├── proba.py
 │       │   ├── pyproject.toml
-│       │   └── requirements.txt
-│       └── otchet_python.md
+│       │   ├── README.md
+│       │   ├── requirements.txt
+│       │   └── rezhimy.py
+│       └── otchet_06.md
 ├── .gitignore
 ├── LICENSE
 └── README.md
